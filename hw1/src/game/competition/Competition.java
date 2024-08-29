@@ -1,8 +1,3 @@
-/**
- * Ariel Perstin
- * 324265164
- */
-
 package game.competition;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
@@ -16,10 +11,15 @@ public abstract class Competition implements PropertyChangeListener {
 	
 	private IArena arena;
 	private int maxCompetitors;
-	private ArrayList<ICompetitor> activeCompetitors;
-	private ArrayList<ICompetitor> finishedCompetitors;
+	protected ArrayList<ICompetitor> activeCompetitors;
+	protected ArrayList<ICompetitor> finishedCompetitors;
 	
-
+	public Competition() {
+		arena = null;
+		maxCompetitors = 20;
+		activeCompetitors = new ArrayList<>();
+		finishedCompetitors = new ArrayList<>();
+	}
 	
 	public Competition(IArena arena, int maxCompetitors) {
 		setArena(arena);

@@ -1,9 +1,3 @@
-/**
- * Ariel Perstin
- * 324265164
- */
-
-
 package game.entities.sportsman;
 
 import game.enums.Discipline;
@@ -14,6 +8,10 @@ public class Snowboarder extends WinterSportsman{
 	
 	public Snowboarder(String name, double age, Gender gender, double acceleration, double maxSpeed, Discipline discipline) {
 		super(name, age, gender, acceleration, maxSpeed, discipline);
+	}
+
+	public Snowboarder clone() throws CloneNotSupportedException {
+		return (Snowboarder) super.clone();
 	}
 	
 	public String toString() {
@@ -37,5 +35,7 @@ public class Snowboarder extends WinterSportsman{
 			return true;
 		return false;
 	}
+	
+	
 	
 }

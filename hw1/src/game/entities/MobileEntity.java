@@ -1,9 +1,3 @@
-/**
- * Ariel Perstin
- * 324265164
- */
-
-
 package game.entities;
 
 public abstract class MobileEntity extends Entity implements IMobileEntity {
@@ -11,6 +5,7 @@ public abstract class MobileEntity extends Entity implements IMobileEntity {
 	private double maxSpeed;
 	private double acceleration;
 	private double speed;
+	
 	
 	public MobileEntity(double maxSpeed, double acceleration) {
 		super();

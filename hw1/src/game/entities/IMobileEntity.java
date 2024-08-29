@@ -1,9 +1,3 @@
-/**
- * Ariel Perstin
- * 324265164
- */
-
-
 package game.entities;
 import utilities.Point;
 

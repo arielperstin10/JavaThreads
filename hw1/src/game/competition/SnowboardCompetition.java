@@ -1,8 +1,3 @@
-/**
- * Ariel Perstin
- * 324265164
- */
-
 package game.competition;
 
 import game.arena.WinterArena;

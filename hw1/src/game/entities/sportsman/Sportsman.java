@@ -1,9 +1,3 @@
-/**
- * Ariel Perstin
- * 324265164
- */
-
-
 package game.entities.sportsman;
 import game.entities.MobileEntity;
 import game.enums.Gender;
@@ -13,6 +7,7 @@ public abstract class Sportsman extends MobileEntity {
 	private String name;
 	private double age;
 	private Gender gender;
+	
 	
 	Sportsman(double maxSpeed, double acceleration, String name, double age, Gender gender){
 		super(maxSpeed, acceleration);

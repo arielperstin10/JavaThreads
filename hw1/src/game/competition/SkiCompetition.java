@@ -1,18 +1,19 @@
-/**
- * Ariel Perstin
- * 324265164
- */
-
 package game.competition;
+
 
 import game.arena.WinterArena;
 import game.entities.sportsman.*;
 import game.enums.Discipline;
 import game.enums.Gender;
 import game.enums.League;
+import game.factory.SkiCompetitionPlan;
 
-public class SkiCompetition extends WinterCompetition {
+public class SkiCompetition extends WinterCompetition implements SkiCompetitionPlan {
 
+	public SkiCompetition() {
+		super();
+	}
+	
 	public SkiCompetition (WinterArena arena, int maxCompetitors, Discipline discipline, League league, Gender gender) {
 		super(arena, maxCompetitors, discipline, league, gender);
 	}

@@ -1,8 +1,3 @@
-/**
- * Ariel Perstin
- * 324265164
- */
-
 package game.competition;
 import game.enums.*;
 import game.arena.*;
@@ -13,6 +8,13 @@ public abstract class WinterCompetition extends Competition{
 	private Discipline discipline;
 	private League league;
 	private Gender gender;
+	
+	public WinterCompetition() {
+		super();
+		discipline = Discipline.FREESTYLE;
+		league = League.JUNIOR;
+		gender = Gender.MALE;
+	}
 	
 	public WinterCompetition(WinterArena arena, int maxCompetitors, Discipline discipline, League league, Gender gender) {
 		super(arena, maxCompetitors);
